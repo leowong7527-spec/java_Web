@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <context-param>
+        <param-name>dbUrl</param-name>
+        <param-value>jdbc:mysql://localhost:3306/ITP4511_DB</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dbUser</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dbPassword</param-name>
+        <param-value></param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>HandleCustomer</servlet-name>
+        <servlet-class>ict.servlet.HandleCustomer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HandleCustomer</servlet-name>
+        <url-pattern>/handleCustomer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HandleEdit</servlet-name>
+        <servlet-class>ict.servlet.HandleEdit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HandleEdit</servlet-name>
+        <url-pattern>/handleEdit</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

@@ -1,0 +1,27 @@
+# Maven build artifacts
+target/
+*.war
+*.jar
+*.class
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+nbactions.xml
+nb-configuration.xml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
